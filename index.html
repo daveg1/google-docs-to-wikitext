@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Google Docs to WikiText</title>
+	</head>
+	<body>
+		<div class="split">
+			<div class="split__col">
+				<div class="split__header">
+					<h2 class="split__title">Google Docs Text</h2>
+
+					<menu class="options">
+						<button id="clear-button">Clear box</button>
+						<button id="convert-button">Convert text</button>
+					</menu>
+				</div>
+
+				<div id="html-box" class="edit-box" contenteditable></div>
+			</div>
+
+			<div class="split__col">
+				<div class="split__header">
+					<h2 class="split__title">WikiText</h2>
+				</div>
+
+				<textarea id="wikitext-box" class="edit-box" disabled></textarea>
+			</div>
+		</div>
+
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>
